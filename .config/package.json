@@ -1,7 +1,7 @@
 {
-  "name": "TaiXiu",
+  "name": "taixiu",
   "version": "0.0.1",
-  "description": "Server game by ducnghia",
+  "description": "Server game by DVHOA ",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -16,16 +16,16 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://git.heroku.com/thoiduocroi.git"
+    "url": "git+https://github.com/DVHOA1993/taixiucl.git"
   },
-  "homepage": "https://github.com/trandoducnghia/taixiu",
+  "homepage": "https://github.com/dvhoa93/taixiu",
   "bugs": {
-    "url": "https://github.com/trandoducnghia/taixiu/issues"
+    "url": "https://github.com/dvhoa93/taixiu/issues"
   },
   "author": {
-    "name": "Tran Do Duc Nghia",
-    "email": "admclanpta@gmail.com",
-    "url": "https://github.com/trandoducnghia"
+    "name": "DVHOA",
+    "email": "admclanpt@gmail.com",
+    "url": "https://github.com/dvhoa93"
   },
   "license": "ISC"
 }
