@@ -1,7 +1,7 @@
 {
-  "name": "taixiu",
+  "name": "TaiXiu",
   "version": "0.0.1",
-  "description": "Server game by DVHOA ",
+  "description": "Server game by ducnghia",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,7 +11,7 @@
     "express": "^4.17.1",
     "socket.io": "^2.3.0",
     "request": "^2.88.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
   },
     "engines": {
       "node": "16.5.1",
@@ -21,16 +21,16 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DVHOA1993/taixiucl.git"
+    "url": "git+https://git.heroku.com/thoiduocroi.git"
   },
-  "homepage": "https://github.com/dvhoa93/taixiu",
+  "homepage": "https://github.com/trandoducnghia/taixiu",
   "bugs": {
-    "url": "https://github.com/dvhoa93/taixiu/issues"
+    "url": "https://github.com/trandoducnghia/taixiu/issues"
   },
   "author": {
     "name": "DVHOA",
     "email": "admclanpt@gmail.com",
-    "url": "https://github.com/dvhoa93"
+    "url": "https://github.com/trandoducnghia"
   },
   "license": "ISC"
 }
