@@ -1,8 +1,8 @@
 var express = require("express");
-var io = require("socket.io");
+var socketIO = require("socket.io");
 var request = require('request');
 var path = require("path");
-var app = express();
+var INDEX = path.join(__dirname, "index.html");
 var PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var server = express()
         .use((req, res) => res.sendFile(INDEX))
