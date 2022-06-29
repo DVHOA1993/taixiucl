@@ -3,20 +3,15 @@ var io = require("socket.io");
 var request = require('request');
 var path = require("path");
 var app = express();
-var server = app.listen(process.env.PORT || 4000, function(){
-    console.log('listening for requests on port 4000,');
-});
-app.use(express.static('public'));
-var io = io(server);
-io.on('connection', (socket) => {
-    console.log('made socket connection', socket.id);
-	socket.on('chat', function(data){
-        // console.log(data);
-        io.sockets.emit('chat', data);
-    });
-	socket.on('typing', function(data){
-        socket.broadcast.emit('typing', data);
-    });
+var PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
+var server = express()
+        .use((req, res) => res.sendFile(INDEX))
+        .listen(PORT, () => console.log(`Listening on ${PORT}`));
+var io = socketIO(server,
+{
+        pingInterval: 5000,
+        pingTimeout: 5000,
+        cookie: false
 });
 var cuoc   = Array();
 var system = {
