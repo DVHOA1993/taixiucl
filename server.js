@@ -1,9 +1,9 @@
 var express = require("express");
-var socketIO = require("socket.io")(server);
+var socketIO = require("socket.io");
 var request = require('request');
 var path = require("path");
+var PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var INDEX = path.join(__dirname, "index.html");
-var PORT = require(process.env.PORT || 3000);
 var server = express()
         .use((req, res) => res.sendFile(INDEX))
         .listen(PORT, () => console.log(`Listening on ${PORT}`));
