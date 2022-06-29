@@ -1,5 +1,5 @@
 var express = require("express");
-var socketIO = require("socket.io");
+var io = require("socket.io");
 var request = require('request');
 var path = require("path");
 var app = express();
@@ -9,7 +9,6 @@ var server = app.listen(process.env.PORT || 4000, function(){
 app.use(express.static('public'));
 var io = socket(server);
 io.on('connection', (socket) => {
-
     console.log('made socket connection', socket.id);
 	socket.on('chat', function(data){
         // console.log(data);
