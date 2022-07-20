@@ -15,7 +15,7 @@ var io = socketIO(server,
 });
 var cuoc   = Array();
 var system = {
-	url : 'https://taixiu.9xclub.xyz', 
+	url : 'https://taixiu.9xclub.xyz/', 
 	keycode : '123456', 
 	ngocrong_min : 1000, 
 	ngocrong_max : 2000,
